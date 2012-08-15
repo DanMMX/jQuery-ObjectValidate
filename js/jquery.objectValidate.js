@@ -6,13 +6,13 @@
 	var methods = {
 		init: function(){
 			var validation;
-			this.find("[data-ixp-validate]").each(function(){
+			this.find("[data-objectValidate]").each(function(){
 				
-				var method = $(this).attr("data-ixp-validate");
+				var method = $(this).attr("data-objectValidate");
 				if ( methods[method] ) {
 					validation = methods[method].apply( this, Array.prototype.slice.call( arguments, 1 ));
 				} else {
-					$.error( 'Method ' +  method + ' does not exist on jQuery.ixpValidate' );
+					$.error( 'Method ' +  method + ' does not exist on jquery.objectValidate' );
 				}
 				
 				if(validation.length == 2)
