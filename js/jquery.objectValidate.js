@@ -46,7 +46,7 @@
 		},
 
 		date : function (){
-			var empty = $(this).ixpValidate("empty")
+			var empty = $(this).objectValidate("empty")
 			if(empty != true){
 				return empty;
 			}
@@ -64,7 +64,7 @@
 		},
 
 		text : function () {
-			var empty = $(this).ixpValidate("empty")
+			var empty = $(this).objectValidate("empty")
 			if(empty != true){
 				return empty;
 			}
@@ -80,16 +80,16 @@
 		},
 
 		textEmpty : function () {
-			var empty = $(this).ixpValidate("empty")
+			var empty = $(this).objectValidate("empty")
 			if(empty != true){
 				return true;
 			}
 
-			return $(this).ixpValidate("text")
+			return $(this).objectValidate("text")
 		},
 		
 		phrase : function () {
-			var empty = $(this).ixpValidate("empty")
+			var empty = $(this).objectValidate("empty")
 			if(empty != true){
 				return empty;
 			}
@@ -105,16 +105,16 @@
 		},
 
 		phraseEmpty : function () {
-			var empty = $(this).ixpValidate("empty")
+			var empty = $(this).objectValidate("empty")
 			if(empty != true){
 				return true;
 			}
 
-			return $(this).ixpValidate("phrase")
+			return $(this).objectValidate("phrase")
 		},
 		
 		num : function () {
-			var empty = $(this).ixpValidate("empty")
+			var empty = $(this).objectValidate("empty")
 			if(empty != true){
 				return empty;
 			}
@@ -129,16 +129,16 @@
 		},
 
 		numEmpty : function () {
-			var empty = $(this).ixpValidate("empty")
+			var empty = $(this).objectValidate("empty")
 			if(empty != true){
 				return true;
 			}
 
-			return $(this).ixpValidate("num")
+			return $(this).objectValidate("num")
 		},
 		
 		floatNum : function () {
-			var empty = $(this).ixpValidate("empty")
+			var empty = $(this).objectValidate("empty")
 			if(empty != true){
 				return empty;
 			}
@@ -153,16 +153,16 @@
 		},
 
 		floatNumEmpty : function () {
-			var empty = $(this).ixpValidate("empty")
+			var empty = $(this).objectValidate("empty")
 			if(empty != true){
 				return true;
 			}
 
-			return $(this).ixpValidate("floatNum")
+			return $(this).objectValidate("floatNum")
 		},
 
 		weight : function () {
-			var empty = $(this).ixpValidate("empty")
+			var empty = $(this).objectValidate("empty")
 			if(empty != true){
 				return empty;
 			}
@@ -178,16 +178,16 @@
 		},
 
 		weightEmpty : function () {
-			var empty = $(this).ixpValidate("empty")
+			var empty = $(this).objectValidate("empty")
 			if(empty != true){
 				return true;
 			}
 
-			return $(this).ixpValidate("weight")
+			return $(this).objectValidate("weight")
 		},
 
 		email : function () {
-			var empty = $(this).ixpValidate("empty")
+			var empty = $(this).objectValidate("empty")
 			if(empty != true){
 				return empty;
 			}
@@ -205,16 +205,16 @@
 		},
 
 		emailEmpty : function () {
-			var empty = $(this).ixpValidate("empty")
+			var empty = $(this).objectValidate("empty")
 			if(empty != true){
 				return true;
 			}
 
-			return $(this).ixpValidate("email")
+			return $(this).objectValidate("email")
 		}
 	}
 	
-	$.fn.ixpValidate = function(method, funct){
+	$.fn.objectValidate = function(method, funct){
 		var callback;
 		var a;
 		
@@ -233,7 +233,7 @@
 			callback();
 			return a;
 		} else {
-			$.error( 'Method ' +  method + ' does not exist on jQuery.ixpValidate' );
+			$.error( 'Method ' +  method + ' does not exist on jQuery.objectValidate' );
 		}    
 
 	};	
