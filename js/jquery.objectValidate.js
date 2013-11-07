@@ -6,9 +6,9 @@
 	var methods = {
 		init: function(){
 			var validation;
-			this.find("[data-objectValidate]").each(function(){
+			this.find("[data-object-validate]").each(function(){
 				
-				var method = $(this).attr("data-objectValidate");
+				var method = $(this).attr("data-object-validate");
 				if ( methods[method] ) {
 					validation = methods[method].apply( this, Array.prototype.slice.call( arguments, 1 ));
 				} else {
