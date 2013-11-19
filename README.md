@@ -41,3 +41,7 @@ Should I explain all of them?
 Weight is a personal purpose validation, checks that the element value matches ddd.ddd.
 
 Any of them but empty, checks if the element value is "". For that purpose, append Empty to the wished validation, like `textEmpty`, `numEmpty`, etc.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/DanMMX/jquery-objectvalidate/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
