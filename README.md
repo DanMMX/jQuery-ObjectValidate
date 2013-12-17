@@ -1,4 +1,4 @@
-# jQuery-ObjectValidate #
+# [jQuery-ObjectValidate](http://danmmx.github.io/jQuery-ObjectValidate/) #
 jQuery plugin for custom validation.
 
 ## Usage ##
